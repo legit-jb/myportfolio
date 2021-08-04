@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>J Brennan Full Stack Developer</title>
+</head>
+
+<body>
+
+  <!-- JB -->
+  <section id="JB">
+    <p class="fade-in-slow"> I'm J Brennan, and this is my portfolio.</p>
+  </section>
+  <!-- end JB section -->
+
+  <!-- navbar -->
+  <div class="navbar row" id="myNav">
+    <div class="navRow">
+      <a href="javascript:void(0);" class="icon ignore" onclick="collapseNav()">=</a>
+      <a href="#JB" class="ignore" id="logo">JB</a>
+      <div class="ignore" id="spacer"></div>
+    </div>
+    <a href="#about" onclick="clickedLink()">about</a>
+    <a href="#projects" onclick="clickedLink()">projects</a>
+    <a href="./assets/pdf/JBResume.pdf">resume</a>
+    <a href="#contact" onclick="clickedLink()">contact</a>
+    <a href="https://www.linkedin.com/in/j-brennan-dev"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <!-- end navbar -->
+
+  <!-- about section-->
+  <section id="about">
+    <div class="row">
+      <div class="card">
+        <img id ="my-image" src="./assets/images/me.JPG" width=360px height=281px alt="me">
+      </div>
+      <div class="card">
+        <p id="about-blurb">
+          I'm passionate about the intersection of art and science where technical skill and vision meet. 
+          When a project finally comes together after hard work and harder decisions, it's pure magic.<br><br>
+          I studied film at Temple University and attended University of Pennsylvania's coding boot camp.<br><br>
+          A full stack developer drawn to continued learning, analytical problem solving, and creative solutions 
+          provided by a background in Film and Media Arts. Skilled at collaborating and managing workflow in order to deliver quality applications. 
+          Best known for troubleshooting and never shying away from a challenge
+        </p>
+      </div>
+    </div>
+    <div id="skills">
+    <div class="row" id="row1">
+      <div class="subrow skills" id="subrow1">
+        <div class="micro-card">
+          <i class="fab fa-apple fa-3x"></i>
+          <footer>Certified Technician</footer>
+        </div>
+        <div class="micro-card">
+          <i class="fab fa-java fa-3x"></i>
+          <footer>Java</footer>
+        </div>
+        <div class="micro-card">
+          <i class="fab fa-js-square fa-3x"></i>
+          <footer>JavaScript ES6+</footer>
+        </div>
+      </div>
+      <!-- end subrow1 -->
+      <div class="subrow skills" id="subrow2">
+        <div class="micro-card">
+          <i class="fab fa-html5 fa-3x"></i>
+          <footer>HTML5</footer>
+        </div>
+        <div class="micro-card">
+          <i class="fab fa-css3 fa-3x"></i>
+          <footer>CSS3</footer>
+        </div>
+        <div class="micro-card">
+          <i class="fab fa-node-js fa-3x"></i>
+          <footer>Node.js</footer>
+        </div>
+      </div>
+      <!-- end subrow2 -->
+    </div>
+    <!-- end row1 -->
+    <div class="row" id="row2">
+      <div class="subrow skills" id="subrow3">
+        <div class="micro-card">
+          <i class="fab fa-react fa-3x"></i>
+          <footer>React</footer>
+        </div>
+        <div class="micro-card">
+          <img src="./assets/images/express-icon.png" width=48px height=48px alt="Express icon">
+          <footer>Express</footer>
+        </div>
+        <div class="micro-card">
+          <i class="fas fa-database fa-3x"></i>
+          <footer>SQL</footer>
+        </div>
+      </div>
+      <!-- end subrow3 -->
+      <div class="subrow skills" id="subrow4">
+        <div class="micro-card">
+          <img src="./assets/images/mysql-icon.png" width=48px height=48px alt="MySql icon">
+          <footer>MySQL</footer>
+        </div>
+        <div class="micro-card">
+          <img src="./assets/images/mongodb-icon.png" width=48px height=48px alt="MangoDB icon">
+          <footer>MongoDB</footer>
+        </div>
+        <div class="micro-card">
+          <i class="fab fa-github fa-3x"></i>
+          <footer>GitHub</footer>
+        </div>
+      </div>
+      <!-- end subrow4 -->
+    </div>
+  </div>
+  </section>
+  <!-- end about section -->
+
+  <!-- Projects section -->
+  <section id="projects">
+    <header>
+      projects
+    </header>
+    <div class="row">
+      <div class="card" id="proj1">
+        <a href="https://legit-jb.github.io/provisions/">
+          <img class="projectImg" src="./assets/images/provisions.png" alt="day planner" width="400" height="400">
+        </a>
+        <a href="https://github.com/legit-jb/provisions">github link for credits and info</a>
+      </div>
+
+      <div class="card" id="proj2">
+        <a href="https://legit-jb.github.io/dayScheduler/">
+          <img class="projectImg" src="./assets/images/dayScheduler.png" alt="day planner" width="400" height="400">
+        </a>
+        <a href="https://github.com/legit-jb/dayScheduler">github link for credits and info</a>
+      </div>
+
+      <div class="card" id="proj3">
+        <a href="https://note-taker-jbrennan.herokuapp.com">
+          <img class="projectImg" src="./assets/images/note-taker-screenshot.png" alt="day planner" width="400"
+            height="400">
+        </a>
+        <a href="https://github.com/legit-jb/note-taker">github link for credits and info</a>
+      </div>
+
+      <div class="card" id="proj4">
+        <a href="https://legit-jb.github.io/weatherDash/">
+          <img class="projectImg" src="./assets/images/weather-dash.jpeg" alt="day planner" width="400" height="400">
+        </a>
+        <a href="https://github.com/legit-jb/weatherDash">github link for credits and info</a>
+      </div>
+    </div>
+  </section>
+  <!-- end projects section -->
+
+  <!-- contact section -->
+  <section id="contact">
+    <header>
+      contact
+    </header>
+    <div id="contact-body">
+      <div class="card" id="contact-card">
+        <form action="action_page.php">
+
+          <label for="name">name</label>
+          <input type="text" name="name" placeholder="name...">
+
+          <label for="email">email</label>
+          <input type="email" name="email" placeholder="email address...">
+
+
+          <label for="message">message</label>
+          <textarea name="message" placeholder="message..." style="height:200px"></textarea>
+
+          <input type="submit" value="submit">
+
+        </form>
+      </div>
+    </div>
+  </section>
+  </div>
+  <script src="https://kit.fontawesome.com/7574abc4ff.js" crossorigin="anonymous"></script>
+  <script src="./assets/js/index.js"></script>
+</body>
+<!-- end contact section -->
+
+</html>
