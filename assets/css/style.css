@@ -54,6 +54,7 @@
 /* GENERAL ELEMENT STYLE */
 a {
   color: var(--jdarkblue);
+  text-decoration: none;
 }
 
 a:hover {
@@ -102,10 +103,6 @@ h1 {
 
 h2 {
   font-size: x-large;
-}
-
-.no-underline {
-  text-decoration: none;
 }
 /* END OF GENERAL SECTION */
 
@@ -213,43 +210,6 @@ h2 {
 }
 
 /* END OF PROJECT SECTION */
-
-/* CONTACT SECTION */
-#contact-body {
-  background-color: var(--jdarkgray);
-}
-
-input[type=text], select, textarea, input[type=email] {
-  width: 100%; 
-  padding: 12px; 
-  border: 1px solid var(--jgray); 
-  border-radius: 4px; 
-  box-sizing: border-box; 
-  margin-top: 6px; 
-  margin-bottom: 16px; 
-  resize: vertical;
-}
-
-
-input[type=submit] {
-  /* appearance: none; */
-  /* border: 1px solid var(--jdarkgray); */
-  color: var(--jwhite);
-  border-radius: 5px;
-  background-color: var(--gray);
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: var(--jwhite);
-  color: var(--jblack);
-  /* border: 1px solid var(--jblack); */
-}
-
-input[type=submit]:active {
-  background-color:var(--jdarkgray);
-}
-/* END OF CONTACT SETTING */
 
 /* Resume */
 #resume {
