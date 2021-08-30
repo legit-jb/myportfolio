@@ -199,6 +199,12 @@ h2 {
 /* PROJECT SECTION */
 #projects .card {
   background-color: var(--jgray);
+  justify-content: space-around;
+}
+
+#projects p {
+  color: black;
+  width: 80%;
 }
 
 .projectImg {
