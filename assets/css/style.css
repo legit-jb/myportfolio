@@ -60,8 +60,9 @@ a {
 a:hover {
   cursor: pointer;
   color: var(--jblue);
-  transform:scale(1.075);
+  transform:scale(1.05);
   transition-duration: 0.25s;
+  transition-timing-function: linear;
 }
 
 button {
