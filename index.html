@@ -1,177 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>J Brennan Full Stack Developer</title>
+  </head>
 
-  <link rel="stylesheet" href="./assets/css/reset.css" />
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <title>J Brennan Full Stack Developer</title>
-</head>
+  <body>
+    <!-- JB -->
+    <section id="JB">
+      <a class="fade-in-slow" href="#about">
+        I'm J Brennan and this is my portfolio.</a
+      >
+    </section>
+    <!-- end JB section -->
 
-<body>
-
-  <!-- JB -->
-  <section id="JB">
-    <a class="fade-in-slow" href="#about"> I'm J Brennan and this is my portfolio.</a>
-  </section>
-  <!-- end JB section -->
-
-  <!-- navbar -->
-  <div class="navbar row" id="myNav">
-    <div class="navRow">
-      <a href="javascript:void(0);" class="icon ignore" onclick="collapseNav()">=</a>
-      <a href="#JB" class="ignore" id="logo">JB</a>
-      <div class="ignore" id="spacer"></div>
+    <!-- navbar -->
+    <div class="navbar row" id="myNav">
+      <div class="navRow">
+        <a
+          href="javascript:void(0);"
+          class="icon ignore"
+          onclick="collapseNav()"
+          >=</a
+        >
+        <a href="#JB" class="ignore" id="logo">JB</a>
+        <div class="ignore" id="spacer"></div>
+      </div>
+      <a href="#about" onclick="clickedLink()">about</a>
+      <a href="#projects" onclick="clickedLink()">projects</a>
+      <a href="./assets/pdf/JBResume.pdf">resume</a>
+      <a href="#contact" onclick="clickedLink()">contact</a>
+      <a href="https://www.linkedin.com/in/j-brennan-dev"
+        ><i class="fab fa-linkedin"></i
+      ></a>
     </div>
-    <a href="#about" onclick="clickedLink()">about</a>
-    <a href="#projects" onclick="clickedLink()">projects</a>
-    <a href="./assets/pdf/JBResume.pdf">resume</a>
-    <a href="#contact" onclick="clickedLink()">contact</a>
-    <a href="https://www.linkedin.com/in/j-brennan-dev"><i class="fab fa-linkedin"></i></a>
-  </div>
-  <!-- end navbar -->
+    <!-- end navbar -->
 
-  <!-- about section-->
-  <section id="about">
-    <div class="row">
-      <div class="card">
-        <img id ="my-image" src="./assets/images/me.JPG" width=360px height=281px alt="me">
-      </div>
-      <div class="card">
-        <p id="about-blurb">
-          I'm passionate about the intersection of art and science where technical skill and vision meet. 
-          When a project finally comes together after hard work and harder decisions, it's pure magic.<br><br>
-          I studied film at Temple University and attended University of Pennsylvania's coding boot camp.<br><br>
-          A full stack developer drawn to continued learning, analytical problem solving, and creative solutions 
-          provided by a background in Film and Media Arts. Skilled at collaborating and managing workflow in order to deliver quality applications. 
-          Best known for troubleshooting and never shying away from a challenge.<br><br>
-          Email me at <a href="mailto:J_BrennanDEV@protonmail.com" onclick="clickedLink()">J_BrennanDEV@protonmail.com</a>.
-        </p>
-      </div>
-    </div>
-    <div id="skills">
-    <div class="row" id="row1">
-      <div class="subrow skills" id="subrow1">
-        <div class="micro-card">
-          <i class="fab fa-apple fa-3x"></i>
-          <footer>Certified Technician</footer>
+    <!-- about section-->
+    <section id="about">
+      <div class="row">
+        <div class="card">
+          <img
+            id="my-image"
+            src="./assets/images/me.JPG"
+            width="360px"
+            height="281px"
+            alt="me"
+          />
         </div>
-        <div class="micro-card">
-          <i class="fab fa-java fa-3x"></i>
-          <footer>Java</footer>
-        </div>
-        <div class="micro-card">
-          <i class="fab fa-js-square fa-3x"></i>
-          <footer>JavaScript ES6+</footer>
+        <div class="card">
+          <p id="about-blurb">
+            I'm passionate about the intersection of art and science where
+            technical skill and vision meet. When a project finally comes
+            together after hard work and harder decisions, it's pure magic.<br /><br />
+            I studied film at Temple University and attended University of
+            Pennsylvania's coding boot camp.<br /><br />
+            A full stack developer drawn to continued learning, analytical
+            problem solving, and creative solutions provided by a background in
+            Film and Media Arts. Skilled at collaborating and managing workflow
+            in order to deliver quality applications. Best known for
+            troubleshooting and never shying away from a challenge.<br /><br />
+            Email me at
+            <a href="mailto:J_BrennanDEV@protonmail.com" onclick="clickedLink()"
+              >J_BrennanDEV@protonmail.com</a
+            >.
+          </p>
         </div>
       </div>
-      <!-- end subrow1 -->
-      <div class="subrow skills" id="subrow2">
-        <div class="micro-card">
-          <i class="fab fa-html5 fa-3x"></i>
-          <footer>HTML5</footer>
+      <div id="skills">
+        <div class="row" id="row1">
+          <div class="subrow skills" id="subrow1">
+            <div class="micro-card">
+              <i class="fab fa-apple fa-3x"></i>
+              <footer>Certified Technician</footer>
+            </div>
+            <div class="micro-card">
+              <i class="fab fa-java fa-3x"></i>
+              <footer>Java</footer>
+            </div>
+            <div class="micro-card">
+              <i class="fab fa-js-square fa-3x"></i>
+              <footer>JavaScript ES6+</footer>
+            </div>
+          </div>
+          <!-- end subrow1 -->
+          <div class="subrow skills" id="subrow2">
+            <div class="micro-card">
+              <i class="fab fa-html5 fa-3x"></i>
+              <footer>HTML5</footer>
+            </div>
+            <div class="micro-card">
+              <i class="fab fa-css3 fa-3x"></i>
+              <footer>CSS3</footer>
+            </div>
+            <div class="micro-card">
+              <i class="fab fa-node-js fa-3x"></i>
+              <footer>Node.js</footer>
+            </div>
+          </div>
+          <!-- end subrow2 -->
         </div>
-        <div class="micro-card">
-          <i class="fab fa-css3 fa-3x"></i>
-          <footer>CSS3</footer>
-        </div>
-        <div class="micro-card">
-          <i class="fab fa-node-js fa-3x"></i>
-          <footer>Node.js</footer>
+        <!-- end row1 -->
+        <div class="row" id="row2">
+          <div class="subrow skills" id="subrow3">
+            <div class="micro-card">
+              <i class="fab fa-react fa-3x"></i>
+              <footer>React</footer>
+            </div>
+            <div class="micro-card">
+              <img
+                src="./assets/images/express-icon.png"
+                width="48px"
+                height="48px"
+                alt="Express icon"
+              />
+              <footer>Express</footer>
+            </div>
+            <div class="micro-card">
+              <i class="fas fa-database fa-3x"></i>
+              <footer>SQL</footer>
+            </div>
+          </div>
+          <!-- end subrow3 -->
+          <div class="subrow skills" id="subrow4">
+            <div class="micro-card">
+              <img
+                src="./assets/images/mysql-icon.png"
+                width="48px"
+                height="48px"
+                alt="MySql icon"
+              />
+              <footer>MySQL</footer>
+            </div>
+            <div class="micro-card">
+              <img
+                src="./assets/images/mongodb-icon.png"
+                width="48px"
+                height="48px"
+                alt="MangoDB icon"
+              />
+              <footer>MongoDB</footer>
+            </div>
+            <div class="micro-card">
+              <i class="fab fa-github fa-3x"></i>
+              <footer>GitHub</footer>
+            </div>
+          </div>
+          <!-- end subrow4 -->
         </div>
       </div>
-      <!-- end subrow2 -->
-    </div>
-    <!-- end row1 -->
-    <div class="row" id="row2">
-      <div class="subrow skills" id="subrow3">
-        <div class="micro-card">
-          <i class="fab fa-react fa-3x"></i>
-          <footer>React</footer>
-        </div>
-        <div class="micro-card">
-          <img src="./assets/images/express-icon.png" width=48px height=48px alt="Express icon">
-          <footer>Express</footer>
-        </div>
-        <div class="micro-card">
-          <i class="fas fa-database fa-3x"></i>
-          <footer>SQL</footer>
-        </div>
-      </div>
-      <!-- end subrow3 -->
-      <div class="subrow skills" id="subrow4">
-        <div class="micro-card">
-          <img src="./assets/images/mysql-icon.png" width=48px height=48px alt="MySql icon">
-          <footer>MySQL</footer>
-        </div>
-        <div class="micro-card">
-          <img src="./assets/images/mongodb-icon.png" width=48px height=48px alt="MangoDB icon">
-          <footer>MongoDB</footer>
-        </div>
-        <div class="micro-card">
-          <i class="fab fa-github fa-3x"></i>
-          <footer>GitHub</footer>
-        </div>
-      </div>
-      <!-- end subrow4 -->
-    </div>
-  </div>
-  </section>
-  <!-- end about section -->
+    </section>
+    <!-- end about section -->
 
-  <!-- Projects section -->
-  <section id="projects">
-    <header>
-      projects
-    </header>
-    <div class="row">
-      <div class="card" id="proj1">
-        <a href="https://legit-jb.github.io/provisions/">
-          <img class="projectImg" src="./assets/images/provisions.png" alt="day planner" width="300" height="300">
-        </a>
-        <p>A playful app that generates entreé and wine pairings inspired by ingredients, one’s provisions, inputted by the user.<br><br>
-        </p>
-        <a href="https://github.com/legit-jb/provisions">github link for credits and info</a>
-      </div>
+    <!-- Projects section -->
+    <section id="projects">
+      <header>projects</header>
+      <div class="row">
+        <div class="proj">
+          <img
+            class="projectImg"
+            src="./assets/images/provisions.png"
+            alt="day planner"
+            width="300"
+            height="300"
+          />
+          <div class="info card">
+            <a href="https://legit-jb.github.io/provisions/"
+              >A playful app that generates entreé and wine pairings inspired by
+              ingredients, one’s provisions, inputted by the user.
+            </a>
+            <a href="https://github.com/legit-jb/provisions"
+              >github link for credits and info</a
+            >
+          </div>
+        </div>
 
-      <div class="card" id="proj2">
-        <a href="https://legit-jb.github.io/dayScheduler/">
-          <img class="projectImg" src="./assets/images/dayScheduler.png" alt="day planner" width="300" height="300">
-        </a>
-        <p>
-          A simple but informative day scheduler which uses local storage to keep information. An exercise in simplicity and design.<br><br>
-        </p>
-        <a href="https://github.com/legit-jb/dayScheduler">github link for credits and info</a>
-      </div>
+        <div class="proj">
+          <img
+            class="projectImg"
+            src="./assets/images/dayScheduler.png"
+            alt="day planner"
+            width="300"
+            height="300"
+          />
+          <div class="info card">
+            <a href="https://legit-jb.github.io/dayScheduler/">
+              A simple but informative day scheduler which uses local storage to
+              keep information. An exercise in simplicity and design.
+            </a>
+            <a href="https://github.com/legit-jb/dayScheduler"
+              >github link for credits and info</a
+            >
+          </div>
+        </div>
 
-      <div class="card" id="proj3">
-        <a href="https://note-taker-jbrennan.herokuapp.com">
-          <img class="projectImg" src="./assets/images/note-taker-screenshot.png" alt="day planner" width="300"
-            height="300">
-        </a>
-        <p>
-          A note taking app that uses local storage to store notes. A part of the HTML and local storage learning process.
-        </p>
-        <a href="https://github.com/legit-jb/note-taker">github link for credits and info</a>
-      </div>
+        <div class="proj">
+          <img
+            class="projectImg"
+            src="./assets/images/note-taker-screenshot.png"
+            alt="day planner"
+            width="300"
+            height="300"
+          />
+          <div class="info card">
+            <a href="https://note-taker-jbrennan.herokuapp.com">
+              A note taking app that uses local storage to store notes. A part
+              of the HTML and local storage learning process.
+            </a>
+            <a href="https://github.com/legit-jb/note-taker"
+              >github link for credits and info</a
+            >
+          </div>
+        </div>
 
-      <div class="card" id="proj4">
-        <a href="https://legit-jb.github.io/weather-dashboard/">
-          <img class="projectImg" src="./assets/images/weather-dash.jpeg" alt="day planner" width="300" height="300">
-        </a>
-        <p>
-          A nice little webpage that shows the weather of a city for the current day and also the five day forecast.
-        </p>
-        <a href="https://github.com/legit-jb/weatherDash">github link for credits and info</a>
+        <div class="proj">
+          <img
+            class="projectImg"
+            src="./assets/images/weather-dash.jpeg"
+            alt="day planner"
+            width="300"
+            height="300"
+          />
+          <div class="info card">
+            <a href="https://legit-jb.github.io/weather-dashboard/">
+              A nice little webpage that shows the weather of a city for the
+              current day and also the five day forecast.
+            </a>
+            <a href="https://github.com/legit-jb/weatherDash"
+              >github link for credits and info</a
+            >
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
-  <!-- end projects section -->
-  
-  <script src="https://kit.fontawesome.com/7574abc4ff.js" crossorigin="anonymous"></script>
-  <script src="./assets/js/index.js"></script>
-</body>
+    </section>
+    <!-- end projects section -->
+
+    <script
+      src="https://kit.fontawesome.com/7574abc4ff.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/index.js"></script>
+  </body>
 </html>
