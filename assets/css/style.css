@@ -116,7 +116,7 @@ h2 {
   background-color: var(--jblack);
   overflow: hidden;
   opacity: .97;
-  z-index: 1;
+  z-index: 2;
 }
 
 .navRow {
@@ -214,9 +214,32 @@ h2 {
   border-radius: 100%;
 }
 
-.projectImg:hover {
-  cursor: pointer;
+/* Tooltip container
+.tooltip {
+  position: relative;
+  display: inline-block;
 }
+
+/* Tooltip text */
+/* .tooltip .tooltip-text {
+  visibility: hidden;
+  width: 300px;
+  bottom: 100%;
+  left: 50%; 
+  margin-left: -150px; /*Use half of the width (120/2 = 60), to center the tooltip */
+  /* background-color: var(--jblack);
+  color: var(--jwhite);
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+} */
+
+/* Show the tooltip text when you mouse over the tooltip container */
+/*.tooltip:hover .tooltip-text {
+  visibility: visible;
+} */
 
 /* END OF PROJECT SECTION */
 
