@@ -59,6 +59,9 @@ a {
 
 a:hover {
   cursor: pointer;
+  color: var(--jblue);
+  transform:scale(1.075);
+  transition-duration: 0.25s;
 }
 
 button {
@@ -113,6 +116,7 @@ h2 {
   background-color: var(--jblack);
   overflow: hidden;
   opacity: .97;
+  z-index: 1;
 }
 
 .navRow {
@@ -123,7 +127,6 @@ h2 {
 
 .navbar a {
   color: var(--jgray);
-  text-decoration: none;
 }
 
 .navbar a:active {
@@ -253,10 +256,6 @@ h2 {
   #name {
     text-align: center;
   }
-
-  /* .micro-card {
-    flex: 1 0 20%;
-  } */
 }
 
 @media screen and (max-width: 600px) {
@@ -280,6 +279,7 @@ h2 {
 
 /* -----Fade In ----- */
 .fade-in-fast {
+  color: var(--jwhite);
   animation: fadeIn ease 3s;
   -webkit-animation: fadeIn ease 3s;
   -moz-animation: fadeIn ease 3s;
@@ -288,6 +288,7 @@ h2 {
 }
 
 .fade-in-slow {
+  color: var(--jwhite);
   animation: fadeIn ease 8s;
   -webkit-animation: fadeIn ease 8s;
   -moz-animation: fadeIn ease 8s;
