@@ -115,8 +115,6 @@ h2 {
   justify-content: space-evenly;
   background-color: var(--jblack);
   overflow: hidden;
-  opacity: 0.97;
-  z-index: 1;
 }
 
 .navRow {
