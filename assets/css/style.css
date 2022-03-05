@@ -14,7 +14,7 @@
 
 /* Flexbox */
 .row {
-  width:100%;
+  width: 100%;
   max-width: 1028px;
   display: flex;
   justify-content: center;
@@ -41,7 +41,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width:100px;
+  width: 100px;
   height: 100px;
   text-align: center;
 }
@@ -60,9 +60,8 @@ a {
 a:hover {
   cursor: pointer;
   color: var(--jblue);
-  transform:scale(1.05);
-  transition-duration: 0.25s;
-  transition-timing-function: linear;
+  transform: scale(1.05);
+  transition: transform 0.25s linear 0s;
 }
 
 button {
@@ -72,7 +71,7 @@ button {
   background-color: var(--gray);
 }
 
-button:hover{
+button:hover {
   cursor: pointer;
   background-color: var(--jwhite);
   color: var(--jblack);
@@ -80,7 +79,7 @@ button:hover{
 }
 
 button:active {
-  background-color:var(--jdarkgray);
+  background-color: var(--jdarkgray);
 }
 
 body {
@@ -116,8 +115,6 @@ h2 {
   justify-content: space-evenly;
   background-color: var(--jblack);
   overflow: hidden;
-  opacity: .97;
-  z-index: 2;
 }
 
 .navRow {
@@ -164,17 +161,18 @@ h2 {
 
 /* JB SECTION */
 #JB {
-  padding-top:0;
-  min-height:0;
+  padding-top: 0;
+  min-height: 0;
   height: calc(100vh - 60px);
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.5em;
 }
 
 /* ABOUT SECTION */
 #about {
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
@@ -184,7 +182,7 @@ h2 {
   height: 300px;
 }
 
-#my-image{
+#my-image {
   border-radius: 10px;
 }
 
@@ -195,52 +193,53 @@ h2 {
 
 .subrow {
   display: flex;
-  justify-content:space-around;
-  flex-grow:1;
+  justify-content: space-around;
+  flex-grow: 1;
 }
 /* END OF ABOUT SECTION */
 
 /* PROJECT SECTION */
-#projects .card {
-  background-color: var(--jgray);
-  justify-content: space-around;
+.proj {
+  position: relative;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 300px;
+  height: 300px;
 }
 
-#projects p {
-  color: black;
+.info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  margin: 0;
+  justify-content: center;
+  opacity: 0;
+}
+
+.info a {
   width: 80%;
+  text-align: center;
+  margin: 5%;
+  color: var(--jwhite);
 }
 
 .projectImg {
   border-radius: 100%;
 }
 
-/* Tooltip container
-.tooltip {
-  position: relative;
-  display: inline-block;
+.proj:hover .projectImg {
+  opacity: 0.15;
+  transition: opacity 0.5s ease;
 }
 
-/* Tooltip text */
-/* .tooltip .tooltip-text {
-  visibility: hidden;
-  width: 300px;
-  bottom: 100%;
-  left: 50%; 
-  margin-left: -150px; /*Use half of the width (120/2 = 60), to center the tooltip */
-  /* background-color: var(--jblack);
-  color: var(--jwhite);
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
-  position: absolute;
-  z-index: 1;
-} */
-
-/* Show the tooltip text when you mouse over the tooltip container */
-/*.tooltip:hover .tooltip-text {
-  visibility: visible;
-} */
+.proj:hover .info {
+  opacity: 100;
+  transition: opacity 0.5s ease 0.25s;
+}
 
 /* END OF PROJECT SECTION */
 
@@ -288,14 +287,14 @@ h2 {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    height: 300px
+    height: 300px;
   }
 
   .navbar.responsive a {
     display: flex;
   }
   .navbar.responsive a:not(.ignore) {
-    padding-top:3%;
+    padding-top: 3%;
     padding-bottom: 3%;
     padding-left: 2%;
   }
@@ -321,45 +320,12 @@ h2 {
 }
 @keyframes fadeIn {
   0% {
-    opacity:0;
+    scale: 0.95;
+    opacity: 0;
   }
   100% {
-    opacity:1;
+    scale: 1;
+    opacity: 1;
   }
-}
-
-@-moz-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-@-o-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-@-ms-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
 }
 /* -----End Fade In---- */
