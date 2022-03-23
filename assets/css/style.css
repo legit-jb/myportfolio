@@ -238,12 +238,12 @@ h2 {
 
 .proj:hover .blurb {
   opacity: 100;
-  transition: opacity 0.5s ease;
+  transition: opacity 0.75s ease .15s;
 }
 
 .proj:hover .gitlink {
   opacity: 100;
-  transition: opacity 0.5s ease 0.5s;
+  transition: opacity 1s ease 0.3s;
 }
 
 /* END OF PROJECT SECTION */
