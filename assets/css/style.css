@@ -217,14 +217,14 @@ h2 {
   height: 300px;
   margin: 0;
   justify-content: center;
-  opacity: 0;
 }
 
-.info a {
+.info * {
   width: 80%;
   text-align: center;
   margin: 5%;
   color: var(--jwhite);
+  opacity: 0;
 }
 
 .projectImg {
@@ -236,9 +236,14 @@ h2 {
   transition: opacity 0.5s ease;
 }
 
-.proj:hover .info {
+.proj:hover .blurb {
   opacity: 100;
-  transition: opacity 0.5s ease 0.25s;
+  transition: opacity 0.5s ease;
+}
+
+.proj:hover .gitlink {
+  opacity: 100;
+  transition: opacity 0.5s ease 0.5s;
 }
 
 /* END OF PROJECT SECTION */
