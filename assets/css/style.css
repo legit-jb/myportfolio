@@ -64,7 +64,7 @@ a:hover {
   transition: transform 0.25s linear 0s;
 }
 
-button {
+/* button {
   appearance: none;
   border: 1px solid var(--jdarkgray);
   border-radius: 5px;
@@ -80,7 +80,7 @@ button:hover {
 
 button:active {
   background-color: var(--jdarkgray);
-}
+} */
 
 body {
   display: flex;
@@ -110,6 +110,10 @@ h2 {
 /* END OF GENERAL SECTION */
 
 /* NAVBAR */
+#myNav {
+  animation: fadeIn 8s ease 1s backwards;
+}
+
 .navbar {
   height: 60px;
   justify-content: space-evenly;
@@ -168,6 +172,11 @@ h2 {
   justify-content: center;
   align-items: center;
   font-size: 1.5em;
+}
+
+#JB a {
+  color: var(--jwhite);
+  animation: fadeIn 8s ease;
 }
 
 /* ABOUT SECTION */
@@ -305,31 +314,19 @@ h2 {
   }
 }
 
-/* -----Fade In ----- */
-.fade-in-fast {
-  color: var(--jwhite);
-  animation: fadeIn ease 3s;
-  -webkit-animation: fadeIn ease 3s;
-  -moz-animation: fadeIn ease 3s;
-  -o-animation: fadeIn ease 3s;
-  -ms-animation: fadeIn ease 3s;
-}
+/* keyframes */
 
-.fade-in-slow {
+/* .fade-in {
   color: var(--jwhite);
   animation: fadeIn ease 8s;
-  -webkit-animation: fadeIn ease 8s;
-  -moz-animation: fadeIn ease 8s;
-  -o-animation: fadeIn ease 8s;
-  -ms-animation: fadeIn ease 8s;
-}
+} */
 @keyframes fadeIn {
   0% {
-    scale: 0.95;
+    /* scale: 0.95; */
     opacity: 0;
   }
   100% {
-    scale: 1;
+    /* scale: 1; */
     opacity: 1;
   }
 }
